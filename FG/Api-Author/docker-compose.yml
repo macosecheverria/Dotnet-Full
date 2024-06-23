@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+    postgres-db:
+        image: postgres:15.3
+        restart: always
+        environment:
+            - POSTGRES_USERNAME=postgres
+            - POSTGRES_DB=aspdb
+            - POSTGRES_PASSWORD=sasa1234
+        ports:
+            - "5432:5432"
+        volumes:
+            - ./postgres:/var/lib/postgresql/data
