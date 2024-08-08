@@ -11,7 +11,7 @@ namespace Api_Author.Controller;
 public class CommentController : ControllerBase
 {
 
-    private readonly ApplicationDbContext context;
+    private readonly ApplicationDbContext csdfsdfdfontext;
 
     private readonly IMapper mapper;
 
